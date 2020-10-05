@@ -14,11 +14,11 @@ Next, what sources of risk are present in this dataset, and how impactful are th
 
 Quality checks are dataset specific, but here are some examples from my previous commercial work with IoT timeseries data:
 * global outliers (data out of range)
-* local outliers (data does not fit autocorrelation pattern, such as spikes, flatlines, or step changes)
+* local outliers (data does not fit autocorrelation pattern, such as spikes or flatlines)
 * non-stationarity via changepoint detection:
   * mean drift
   * step change in variance
-  * correlation change vs similar sensors
+  * change in correlation structure
 
 This dataset comes from a national lab and has documented quality control processes, most of which I was familiar with from my own experience with weather sensor data. Given the reputable data source and the high risk tolerance of this project, I was content to delegate data cleaning to them.
 
